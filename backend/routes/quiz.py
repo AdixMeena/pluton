@@ -25,3 +25,4 @@ Vary the ans index. Only JSON, no extra text."""
     )
     clean = re.sub(r'```json|```', '', response.choices[0].message.content).strip()
     return {"questions": json.loads(clean)}
+    
